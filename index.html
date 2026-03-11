@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chillhop Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <!-- JPG THUMBNAIL WITH ANIMATION -->
+      <div class="cover-container">
+        <img src="thumbnail.jpg.jpg" alt="Chillhop Lo-Fi" class="thumbnail-img">
+      </div>
+      
+      <!-- SONG NAME -->
+      <h1>Chillhop Lo-Fi</h1>
+      
+      <!-- Audio -->
+      <audio id="audioPlayer" preload="metadata" loop>
+        <source src="chill-night-beats.mp3.mp3" type="audio/mpeg">
+      </audio>
+      
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <input type="range" id="seekBar" min="0" max="100" value="0">
+      </div>
+      
+      <!-- Time Display -->
+      <div class="time-display">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+      
+      <!-- Play Button ONLY -->
+      <div class="controls">
+        <button id="playPause" class="control-btn">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
